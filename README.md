@@ -2,11 +2,4 @@
 
 This is a very basic docker container for [Whatsapp Chat API](https://github.com/mgp25/Chat-API).
 
-The idea behind this container is to make it easy to install and use:
-
-```
-./docker.sh
-docker run -i -t <hash> /bin/bash
-cd /whatsapp/vendor/whatsapp/chat-api/examples
-php exampleFunctional.php
-```
+It's meant to be a base image to build your own docker file from
