@@ -29,7 +29,7 @@ RUN rm -r /etc/php5/cli/php.ini
 RUN cp php.ini /etc/php5/cli/php.ini
 
 # Whatsapp dependencies
-ADD ./dependencies.sh /tmp/start.sh
+ADD ./start.sh /tmp/start.sh
 RUN chmod +x /tmp/start.sh
 RUN /tmp/start.sh
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y ffmpeg
